@@ -1,0 +1,761 @@
+.firstLevel{
+  background: linear-gradient(0deg, rgba(255, 208, 0, 0.5), rgba(255, 208, 0, 0.733), rgba(255, 145, 0, 0.733), rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  z-index: 1;
+  animation-name: rainbow;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rainbow {
+  0% {
+    background: linear-gradient(0deg, rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  }
+  5%{
+    background: linear-gradient(0deg, rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  }
+  15%{
+      background: linear-gradient(0deg, rgba(255, 208, 0, 0.5), rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767), rgba(255, 145, 0, 0.733), rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767));
+    }
+  25%{
+    background: linear-gradient(0deg, rgba(255, 208, 0, 0.5), rgba(255, 208, 0, 0.733), rgba(255, 145, 0, 0.733), rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767));
+  }
+  35%{
+    background: linear-gradient(0deg, rgba(255, 145, 0, 0.733), rgba(0, 132, 255, 0.767));
+  }
+  45%{
+       background: linear-gradient(0deg, rgba(0, 132, 255, 0.767));
+  }
+  50%{
+    background: linear-gradient(0deg, rgba(0, 132, 255, 0.767));
+  }
+  55%{
+    background: linear-gradient(0deg, rgba(0, 132, 255, 0.767));
+  }
+  65%{
+    background: linear-gradient(0deg, rgba(255, 145, 0, 0.733), rgba(0, 132, 255, 0.767));
+  }
+  75%{
+    background: linear-gradient(0deg, rgba(255, 208, 0, 0.5), rgba(255, 208, 0, 0.733), rgba(255, 145, 0, 0.733), rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  }
+  85%{
+    background: linear-gradient(0deg, rgba(255, 208, 0, 0.5), rgba(255, 208, 0, 0.733), rgba(255, 145, 0, 0.733), rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  }
+  95%{
+    background: linear-gradient(0deg, rgba(255, 0, 234, 0.733), rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  }
+  100% {
+    background: linear-gradient(0deg,rgba(4, 0, 255, 0.767), rgb(0, 0, 0));
+  }
+}
+
+.sun{
+  background-color: rgb(245, 210, 16);
+  border-radius: 50%;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  bottom: 0px;
+  margin: auto;
+  animation-name: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+}
+@keyframes linear {
+  0% {
+    bottom: -30%;
+    background: red;
+  }
+  25%{
+    bottom: 0%;
+    background: orange;
+  }
+  50%{
+    bottom: 20%;
+    background: rgb(255, 187, 0);
+  }
+  75%{
+    bottom: 0%;
+    background: orange;
+  }
+  100% {
+    bottom: -30%;
+    background: red;
+  }
+}
+
+.stars {
+  background-color: white;
+  height: 3%;
+  width: 2%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+
+.star-1 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 5%;
+  left: 10%;
+  position: absolute;
+}
+
+.star-2 {
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+  top: 10%;
+  left: 18%;
+  position: absolute;
+}
+
+.star-3 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 33%;
+  left: 23%;
+  position: absolute;
+}
+
+.star-4 {
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+  top: 30%;
+  left: 28%;
+  position: absolute;
+}
+
+.star-5 {
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+  top: 17%;
+  left: 53%;
+  position: absolute;
+}
+
+.star-6 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 25%;
+  left: 64%;
+  position: absolute;
+}
+
+.star-7 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 29%;
+  left: 73%;
+  position: absolute;
+}
+
+.star-8 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 42%;
+  left: 33%;
+  position: absolute;
+}
+
+.star-9 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 12vh;
+  left: 75vh;
+  position: absolute;
+}
+
+.star-10 {
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  top: 3vh;
+  left: 77vh;
+  position: absolute;
+}
+
+@keyframes twinkle-1 {
+  10% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-2 {
+  40% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-3 {
+  60% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+.starDiv {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 0%;
+  animation-name: star-fade;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+}
+
+@keyframes star-fade {
+  0% {
+    opacity: 1;
+  }
+  10%{
+    opacity: 0.7;
+  }
+  25%{
+    opacity: 0.3;
+  }
+  35%{
+    opacity: 0.2;
+  }
+  45%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  55%{
+    opacity: 0;
+  }
+  65%{
+    opacity: 0.2;
+  }
+  75%{
+    opacity: 0.3;
+  }
+  90%{
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.moon1 {
+  background-color: transparent;
+  height: 45%;
+  width: 9%;
+  right: 31%;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 15px 20px 0 0 white;
+}
+
+.waves {
+  background-color: blue;
+  height: 13.8%;
+  bottom: 0%;
+  width: 15%;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 100%;
+  position: absolute;
+  animation-name: wave-1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-top: 3px solid white;
+  position: absolute;
+}
+
+.wave-1 {
+  animation-name: wave-1;
+  left: -9%;
+  bottom: -2%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-2 {
+  animation-name: wave-2;
+  left: 5%;
+  bottom: -1%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-3 {
+  animation-name: wave-2;
+  left: 6%;
+  bottom: -2%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-4 {
+  animation-name: wave-1;
+  left: 10%;
+  bottom: -2%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-5 {
+  animation-name: wave-6;
+  left: 15%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-6 {
+  animation-name: wave-5;
+  left: 19%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-7 {
+  animation-name: wave-4;
+  left: 24%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-8 {
+  animation-name: wave-5;
+  left: 28%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-9 {
+  animation-name: wave-6;
+  left: 32%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-10 {
+  animation-name: wave-6;
+  left: 38%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-11 {
+  animation-name: wave-5;
+  left: 42%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-12 {
+  animation-name: wave-4;
+  left: 47%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-13 {
+  animation-name: wave-2;
+  left: 50%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-14 {
+  animation-name: wave-4;
+  left: 54%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-15 {
+  animation-name: wave-1;
+  left: 57%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-16 {
+  animation-name: wave-6;
+  left: 60%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-17 {
+  animation-name: wave-5;
+  left: 64%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-18 {
+  animation-name: wave-6;
+  left: 68%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-19 {
+  animation-name: wave-4;
+  left: 73%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-20 {
+  animation-name: wave-6;
+  left: 78%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-21 {
+  animation-name: wave-1;
+  left: 82%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-22 {
+  animation-name: wave-4;
+  left: 80%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-23 {
+  animation-name: wave-5;
+  left: 79%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-24 {
+  animation-name: wave-6;
+  left: 0%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-25 {
+  animation-name: wave-1;
+  left: 5%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-26 {
+  animation-name: wave-4;
+  left: -3;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-27 {
+  animation-name: wave-1;
+  left: -1%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-28 {
+  animation-name: wave-2;
+  left: -5%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-29 {
+  animation-name: wave-2;
+  left: -5%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-30 {
+  animation-name: wave-2;
+  left: -5%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-31 {
+  animation-name: wave-2;
+  left: -5%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-32 {
+  animation-name: wave-2;
+  left: -5%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-33 {
+  animation-name: wave-5;
+  left: 13%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-34 {
+  animation-name: wave-2;
+  left: 25%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-35 {
+  animation-name: wave-2;
+  left: 35%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-36 {
+  animation-name: wave-2;
+  left: 45%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-37 {
+  animation-name: wave-2;
+  left: 55%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-38 {
+  animation-name: wave-2;
+  left: 65%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-39 {
+  animation-name: wave-5;
+  left: 75%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-40 {
+  animation-name: wave-1;
+  left: 83%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-41 {
+  animation-name: wave-2;
+  left: 80%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-42 {
+  animation-name: wave-5;
+  left: 70%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-43 {
+  animation-name: wave-4;
+  left: 60%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-44 {
+  animation-name: wave-2;
+  left: 50%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-45 {
+  animation-name: wave-1;
+  left: 40%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-46 {
+  animation-name: wave-2;
+  left: 30%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.wave-47 {
+  animation-name: wave-3;
+  left: 20%;
+  bottom: -5%;
+  animation-duration: 4s;
+  position: absolute;
+}
+
+.wave-48 {
+  animation-name: wave-4;
+  left: 10%;
+  bottom: -5%;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+.water{
+  width: 100%;
+  background: blue;
+  bottom: -1%;
+  height: 10%;
+  position: absolute;
+}
+
+@keyframes wave-1 {
+  20% {
+    transform: rotate(-10deg) scale(0.8);
+    bottom: -3%;
+  }
+  60% {
+    transform: rotate(8deg)scale(0.8);
+    bottom: 2%;
+  }
+}
+
+@keyframes wave-2 {
+  20% {
+    transform: rotate(-12deg) scale(0.8);
+    bottom: -3%
+  }
+  60% {
+    transform: rotate(15deg) scale(0.8);
+    bottom: 1%;
+  }
+}
+
+@keyframes wave-3 {
+  20% {
+    transform: rotate(-4deg) scale(0.8);
+    bottom: -3%;
+  }
+  60% {
+    transform: rotate(10deg) scale(0.8);
+    bottom: 0%;
+  }
+}
+
+@keyframes wave-4 {
+  20% {
+    transform: rotate(-3deg) scale(0.8);
+    bottom: -3%;
+  }
+  60% {
+    transform: rotate(10deg) scale(0.8);
+    bottom: 1%;
+  }
+}
+
+@keyframes wave-5 {
+  20% {
+    transform: rotate(-2deg) scale(0.8);
+    bottom: -3%;
+  }
+  60% {
+    transform: rotate(16deg) scale(0.8);
+    bottom: 2%;
+  }
+}
+
+@keyframes wave-6 {
+  20% {
+    transform: rotate(-10deg) scale(0.8);
+    bottom: -3%;
+  }
+  60% {
+    transform: rotate(10deg) scale(0.8);
+    bottom: 0%;
+  }
+}
+
+.secondLevel{
+  background: linear-gradient(0deg, rgba(255, 0, 0, 0.767), rgb(0, 0, 0), rgba(255, 208, 0, 0.733));
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.island2 {
+  width: 100%;
+  height: 30%;
+  background-color: black;
+  position: absolute;
+  background: black;
+  bottom: -30%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
